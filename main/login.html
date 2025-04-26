@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login to LiveWithRoomies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?cs=srgb&dl=pexels-jvdm-1457842.jpg&fm=jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        body h1{
+            text-align: center;
+            margin: 40px 0;
+            font-size: 40px;
+        }
+        form{
+            background-color: transparent;
+            backdrop-filter: blur(20px);
+        }
+        fieldset {
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10 silver;
+        }
+        legend {
+            font-size: 22px;
+            font-weight: bold;
+            color: black;
+        }
+        .input{
+            margin: 10px 0;
+            padding: 10px;
+        }
+        input:hover{
+            background-color: transparent;
+        }
+        input:hover::placeholder{
+            color: black;
+        }
+        .password{
+            margin: 10px 0;
+            padding: 10px;
+        }
+        input{
+            border-radius: 10px;
+            border: 1px solid black;
+            height: 30px;
+            width: 250px;
+            background: rgb(49, 49, 49);
+            padding-left: 20px;
+        }
+        input::placeholder{
+            font-size: 14px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        #forgot{
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 10px;
+            padding: 5px 0;
+            text-align: end;
+        }
+        #forgot:hover{
+            color: red;
+        }
+        p{
+            font-size: 19px;
+            font-weight: bold;
+            margin-left: 10px;
+            padding: 5px 0;
+            text-align: end;
+        }
+        p strong:hover{
+            color: blue;
+        }
+
+        @media(max-width: 768px){
+            body{
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ18bBhQf3Bjtaj8Ru8plvxK7YEploplq5YVA&s");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media(min-width: 769px){
+            body{
+                background-image: url("https://mr1.homeflow-assets.co.uk/files/site_asset/image/5541/1263/_x_/kara-eads-L7EwHkq1B2s-unsplash.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media(min-width:993px){
+            body{
+                background-image: url("https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?cs=srgb&dl=pexels-jvdm-1457842.jpg&fm=jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Welcome to LiveWithRoomies</h1>
+    <div class="contianer">
+        <form action="login">
+            <fieldset>
+            <legend>Login</legend>
+            <div class="input">
+                <input type="text" id="username" placeholder="Username">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="password">
+                <input type="password" id="password" placeholder="Password">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            
+            <p id="forgot"><u>Forgot Password</u></p>
+            <p>Don't have an account? <Strong>Register</Strong></p>
+        </fieldset>
+        </form>
+    </div>
+</body>
+</html>
